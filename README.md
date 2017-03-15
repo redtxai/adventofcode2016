@@ -1,31 +1,21 @@
-# adventofcode2016
---- Day 1: No Time for a Taxicab ---
+Hi! I'm Eric Wastl. I make Advent of Code. I hope you like it! I also made Vanilla JS, PHP Sadness, and lots of other things. You can find me on Twitter and GitHub.
 
-Santa's sleigh uses a very high-precision clock to guide its movements, and the clock's oscillator is regulated by stars. Unfortunately, the stars have been stolen... by the Easter Bunny. To save Christmas, Santa needs you to retrieve all fifty stars by December 25th.
+Advent of Code is a series of small programming puzzles for a variety of skill levels. They are self-contained and are just as appropriate for an expert who wants to stay sharp as they are for a beginner who is just learning to code. Each puzzle calls upon different skills and has two parts that build on a theme.
 
-Collect stars by solving puzzles. Two puzzles will be made available on each day in the advent calendar; the second puzzle is unlocked when you complete the first. Each puzzle grants one star. Good luck!
+If you'd like to support Advent of Code, you can do so indirectly by helping to [Share] it with others, or directly via PayPal or bitcoin.
 
-You're airdropped near Easter Bunny Headquarters in a city somewhere. "Near", unfortunately, is as close as you can get - the instructions on the Easter Bunny Recruiting Document the Elves intercepted start here, and nobody had time to work them out further.
+--- General Tips ---
 
-The Document indicates that you should start at the given coordinates (where you just landed) and face North. Then, follow the provided sequence: either turn left (L) or right (R) 90 degrees, then walk forward the given number of blocks, ending at a new intersection.
+If you get stuck, try your solution against the examples given in the puzzle; you should get the same answers. If not, re-read the description. Did you misunderstand something? Is your program doing something you don't expect? After the examples work, if your answer still isn't correct, build some test cases for which you can verify the answer by hand and see if those work with your program. If you're still stuck, maybe ask a friend for help, or come back to the puzzle later. You can also ask for hints in the subreddit.
 
-There's no time to follow such ridiculous instructions on foot, though, so you take a moment and work out the destination. Given that you can only walk on the street grid of the city, how far is the shortest path to the destination?
+If you really think your solution is correct but your answer isn't accepted, and you think there might be a mistake in the puzzle itself because nobody else is solving it either (check the [Stats] page), let me know via Twitter. My beta testers and I have checked the challenges pretty thoroughly, but it's still possible that there's an error somewhere.
 
-For example:
+--- Credits ---
 
-Following R2, L3 leaves you 2 blocks East and 3 blocks North, or 5 blocks away.
-R2, R2, R2 leaves you 2 blocks due South of your starting position, which is 2 blocks away.
-R5, L5, R5, R3 leaves you 12 blocks away.
-How many blocks away is Easter Bunny HQ?
+Design & Code: Eric Wastl
 
-Your puzzle answer was 278.
+Beta Testing: Tim Giannetti and Ben Lucek
 
---- Part Two ---
+Community Managers: Danielle Lucek and Aneurysm9
 
-Then, you notice the instructions continue on the back of the Recruiting Document. Easter Bunny HQ is actually at the first location you visit twice.
-
-For example, if your instructions are R8, R4, R4, R8, the first location you visit twice is 4 blocks away, due East.
-
-How many blocks away is the first location you visit twice?
-
-Your puzzle answer was 161.
+Playing: In this case, Me, redtxai!
