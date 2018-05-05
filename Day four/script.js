@@ -6,6 +6,7 @@ var input_array = input.split('_')
 var idSum = 0
 var i = 0
 var alphabet = "a b c d e f g h i j k l m n o p q r s t u v w x y z".split(' ')
+var alphabetString = "abcdefghijklmnopqrstuvwxyz"
 
 for (i = 0 ; i < input_array.length ; i++) {
     var alphabetMark = {}
@@ -50,9 +51,32 @@ for (i = 0 ; i < input_array.length ; i++) {
         continue
     }
 
-    idSum = +idSum + +roomId
+    // idSum = +idSum + +roomId
+    let roomNameShifted = roomName
+    for (let m = 0 ; m < +roomId ; m++) {
+        roomNameShifted = shiftLetterOneTime(roomNameShifted)
+    }
+    console.log(roomNameShifted + " - " + roomId)
 }
-console.log(idSum)
+// console.log(idSum)
+
+
+function shiftLetterOneTime(stringToShift) {
+    let stringArray = stringToShift.split('')
+    for (let i = 0 ; i < stringArray.length ; i++) {
+        stringArray[i] = getAlphabetIndex(stringArray[i])
+    }
+    return stringArray.join('')
+}
+
+function getAlphabetIndex(letter) {
+    if (letter == 'z') {
+        return 'a'
+    } else {
+        let index = alphabetString.indexOf(letter)
+        return alphabetString[index + 1]
+    }
+}
 
 function checkLetter(letter, value, arrayToCheck) {
     let maxValue = getMax(arrayToCheck)
